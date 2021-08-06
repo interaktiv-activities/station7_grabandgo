@@ -1,0 +1,112 @@
+@font-face{
+  font-family: Eathoma;
+  src: url(FONTS/EathomaSansFont.ttf);
+}
+
+@font-face{
+  font-family: Sofia;
+  src: url(FONTS/Sofia/Sofia\ Pro\ Regular\ Az.otf)
+}
+
+@font-face{
+  font-family: CandyBeans;
+  src: url(FONTS/Candy\ Beans.otf)
+}
+
+body {
+  background-image: url(ASSETS/background.png);
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  width: 100vw;
+  height: auto;
+  max-width: 100vw;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: Sofia;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+}
+
+.grid {
+  height: 560px;
+  width: 560px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding:5px;
+  justify-content: center;
+  border-radius: 40px;
+  border: 20px solid #FF7701;
+  background-color: #FFFFFF;
+  box-shadow: 0px 18px rgb(0 0 0 / .3);
+}
+
+.grid div {
+    height: 70px;
+    width: 70px;
+}
+
+.container{
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin: auto;
+}
+
+.score{
+  margin: auto;
+  font-family: Eathoma;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.title-img{
+  width: 60%;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.btn{
+  background-color: #FF7701;
+  border: transparent;
+  font-family: Eathoma;
+  color: #FFFFFF;
+  border-radius: 15px;
+  font-size: 15px;
+  padding-left: 60px;
+  padding-right: 60px;
+  box-shadow: 0px 12px #D86400;
+  position: relative;
+  margin: auto;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.btn:hover{
+  box-shadow: 0px 8px #D86400;
+  top: 4px;
+}
+
+.btn:active{
+  box-shadow: 0px 2px #D86400;
+  top: 10px;
+}
+
+.msg{
+  width: 700px;
+  position: relative;
+  display: block;
+  margin: auto;
+  margin-top: 15%;
+  cursor: default;
+}
+
+.hide{
+  display: none;
+}
