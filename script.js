@@ -43,7 +43,7 @@ function GameStart()
 
   var gameTimer = setInterval( () => {
     timer--
-    timerDisplay.innerHTML = "SCORE: "+timer
+    timerDisplay.innerHTML = "TIMER: "+timer
   }
   , 1000)
 
