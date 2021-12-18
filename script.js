@@ -16,7 +16,7 @@ backgroundMusic.src = "SOUNDS/happy.mp3"
 function GameStart() 
 {
   backgroundMusic.play()
-  backgroundMusic.volume=0.1
+  backgroundMusic.volume= 0.05
   const grid = document.querySelector('.grid')
   const scoreDisplay = document.getElementById('score')
   const title = document.getElementById('title-img')
@@ -24,7 +24,7 @@ function GameStart()
   const failMessage = document.getElementById('fail-msg')
   const menuButton = document.getElementById('menu-btn')
   const timerDisplay = document.getElementById('timer')
-  let timer = 90
+  let timer = 120
   const width = 8
   const squares = []
   let score = 0
@@ -144,6 +144,7 @@ function GameStart()
           scoreDisplay.innerHTML = "SCORE: " + score
           rowOfFour.forEach(index => {
           squares[index].style.backgroundImage = ''
+          correctSound.volume = .1
           correctSound.play()
           })
         }
@@ -163,6 +164,7 @@ function GameStart()
           scoreDisplay.innerHTML = score
           columnOfFour.forEach(index => {
           squares[index].style.backgroundImage = ''
+          correctSound.volume = .1
           correctSound.play()
           })
         }
@@ -185,6 +187,7 @@ function GameStart()
           scoreDisplay.innerHTML = "SCORE: " + score
           rowOfThree.forEach(index => {
           squares[index].style.backgroundImage = ''
+          correctSound.volume = .1
           correctSound.play()
           })
         }
@@ -204,6 +207,7 @@ function GameStart()
           scoreDisplay.innerHTML = "SCORE: " + score
           columnOfThree.forEach(index => {
           squares[index].style.backgroundImage = ''
+          correctSound.volume = .1
           correctSound.play()
           })
         }
@@ -227,7 +231,7 @@ function GameStart()
         menuButton.classList.remove('hide')
         passMessage.classList.remove('hide')
         winSound.play()
-        let volumeWin = 1
+        let volumeWin = .1
         volumeWin--
         gameOverSound.volume() = volumeWin
         backgroundMusic.pause()
@@ -239,7 +243,7 @@ function GameStart()
         grid.classList.add('hide')
         failMessage.classList.remove('hide')
         gameOverSound.play()
-        let volumeGameOver = 1
+        let volumeGameOver = .1
         volumeGameOver--
         gameOverSound.volume() = volumeGameOver
         backgroundMusic.pause()
